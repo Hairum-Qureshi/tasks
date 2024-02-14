@@ -5,7 +5,19 @@
  * the number twice.
  */
 export function bookEndList(numbers: number[]): number[] {
-    return numbers;
+    if (numbers.length == 0) {
+        return [];
+    } else if (numbers.length == 1) {
+        const numbersCopy = [...numbers];
+        numbersCopy.splice(1, 0, numbers[0]);
+        return numbersCopy;
+    } else {
+        const findFirstAndLast = (num: number): boolean =>
+            numbers.indexOf(num) == 0 ||
+            numbers.indexOf(num) == numbers.length - 1;
+        const firstAndLast = numbers.filter(findFirstAndLast);
+        return firstAndLast;
+    }
 }
 
 /**
@@ -13,7 +25,9 @@ export function bookEndList(numbers: number[]): number[] {
  * number has been tripled (multiplied by 3).
  */
 export function tripleNumbers(numbers: number[]): number[] {
-    return numbers;
+    const numbersCopy = [...numbers];
+    const tripled: number[] = numbersCopy.map((num: number): number => num * 3);
+    return tripled;
 }
 
 /**
@@ -21,7 +35,10 @@ export function tripleNumbers(numbers: number[]): number[] {
  * the number cannot be parsed as an integer, convert it to 0 instead.
  */
 export function stringsToIntegers(numbers: string[]): number[] {
-    return [];
+    const stringsToNumbers: number[] = numbers.map((num: string): number =>
+        isNaN(Number(num)) ? 0 : Number(num)
+    );
+    return stringsToNumbers;
 }
 
 /**
