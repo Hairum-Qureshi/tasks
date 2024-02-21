@@ -162,27 +162,4 @@ export function injectPositive(values: number[]): number[] {
         valuesCopy.splice(lastElem + 1, 0, sum);
         return valuesCopy;
     }
-    // const findNegatives = (num: number): boolean => num < 0;
-    // const negativeNumbers = values.filter(findNegatives);
-    // let sum = 0;
-    // if (negativeNumbers.length != 0) {
-    //     const firstNegative = negativeNumbers[0];
-    //     const getNegativeIndex: number[] = values.map((): number =>
-    //         values.indexOf(firstNegative)
-    //     );
-    //     const negativeIndex: number = getNegativeIndex[0];
-
-    //     const numsBeforeNegative = (num: number): boolean =>
-    //         values.indexOf(num) < negativeIndex;
-    //     values
-    //         .filter(numsBeforeNegative)
-    //         .map((num: number): number => (sum += num));
-    //     values.splice(negativeIndex + 1, 0, sum);
-    //     return values;
-    // } else {
-    //     values.map((num: number): number => (sum += num));
-    //     const lastElem = values.length - 1;
-    //     values.splice(lastElem + 1, 0, sum);
-    //     return values;
-    // }
 }
