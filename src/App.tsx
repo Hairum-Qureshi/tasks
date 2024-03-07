@@ -1,5 +1,11 @@
 import React from "react";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { Counter } from "./components/Counter";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
 
 function App(): JSX.Element {
     return (
@@ -7,10 +13,14 @@ function App(): JSX.Element {
             <header className="App-header" style={{ backgroundColor: "black" }}>
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
+            <div>
+                <ChangeType />
+                <Counter />
+                <CycleHoliday />
+                <RevealAnswer />
+                <StartAttempt />
+                <TwoDice />
+            </div>
         </div>
     );
 }
