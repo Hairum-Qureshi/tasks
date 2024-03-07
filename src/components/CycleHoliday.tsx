@@ -10,19 +10,6 @@ export function CycleHoliday(): JSX.Element {
         "4th of July 🎆"
     ];
 
-    interface Months {
-        [key: number]: string;
-    }
-
-    const monthlyHolidays: Months = {
-        6: "Eid ul Adha ☪️",
-        10: "Halloween 🎃",
-        3: "Ramadan 🌙",
-        4: "Eid ul Fitr 🌒",
-        7: "Fourth of July 🎆"
-    };
-
-    const holidayMonths = [6, 10, 3, 4, 7];
     const [currentHolidayIndex, setCurrentHolidayIndex] = useState<number>(0);
 
     function advanceAlphabetically() {
