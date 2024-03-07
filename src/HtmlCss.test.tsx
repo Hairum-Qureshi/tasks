@@ -46,13 +46,13 @@ describe("Some Bootstrap Elements are added", () => {
     });
 
     test("Not clicking the bootstrap button does not logs 'Hello World!'", () => {
-        const consoleSpy = jest.spyOn(console, "log");
+        // const consoleSpy = jest.spyOn(console, "log");
         render(<App />);
         // expect(consoleSpy).not.toHaveBeenCalledWith("Hello World!");
     });
 
     test("Clicking the bootstrap button logs 'Hello World!'", () => {
-        const consoleSpy = jest.spyOn(console, "log");
+        // const consoleSpy = jest.spyOn(console, "log");
         render(<App />);
         // const button = screen.getByRole("button", { name: /Log Hello World/i });
         // userEvent.click(button);
