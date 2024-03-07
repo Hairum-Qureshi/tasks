@@ -21,13 +21,12 @@ export function TwoDice(): JSX.Element {
             <div data-testid="left-die">{leftDie}</div>
             <Button onClick={() => setRightDie(d6())}>Roll Right</Button>
             <div data-testid="right-die">{rightDie}</div>
-            {leftDie === rightDie ? (
-                leftDie === 1 && rightDie === 1 ? (
-                    <span>Lose</span>
-                ) : (
-                    <span>Win</span>
-                )
-            ) : null}
+            {leftDie === rightDie && leftDie === 1 && rightDie === 1 && (
+                <span>Lose</span>
+            )}
+            {leftDie === rightDie && !(leftDie === 1 && rightDie === 1) && (
+                <span>Win</span>
+            )}
         </div>
     );
 }
