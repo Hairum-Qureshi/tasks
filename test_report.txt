@@ -11,43 +11,53 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/arrays.test.ts
 PASS src/objects.test.ts
+PASS src/arrays.test.ts
 PASS src/nested.test.ts
 PASS src/components/StartAttempt.test.tsx
-PASS src/HtmlCss.test.tsx
+PASS src/bad-components/ChooseTeam.test.tsx
 PASS src/components/TwoDice.test.tsx
+PASS src/bad-components/DoubleHalf.test.tsx
 PASS src/functions.test.ts
+PASS src/HtmlCss.test.tsx
 PASS src/components/ChangeType.test.tsx
 PASS src/components/CycleHoliday.test.tsx
 PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
+PASS src/bad-components/ColoredBox.test.tsx
+PASS src/bad-components/ShoveBox.test.tsx
 PASS src/text.test.tsx
 PASS src/App.test.tsx
--------------------|---------|----------|---------|---------|-------------------
-File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
--------------------|---------|----------|---------|---------|-------------------
-All files          |   99.09 |    97.59 |     100 |   99.51 |                   
- src               |   98.93 |    96.96 |     100 |   99.43 |                   
-  App.tsx          |     100 |      100 |     100 |     100 |                   
-  arrays.ts        |     100 |      100 |     100 |     100 |                   
-  functions.ts     |     100 |      100 |     100 |     100 |                   
-  nested.ts        |   97.43 |       92 |     100 |    98.7 | 298               
-  objects.ts       |     100 |      100 |     100 |     100 |                   
- src/components    |     100 |      100 |     100 |     100 |                   
-  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
-  Counter.tsx      |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx |     100 |      100 |     100 |     100 |                   
-  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
- src/interfaces    |       0 |        0 |       0 |       0 |                   
-  answer.ts        |       0 |        0 |       0 |       0 |                   
-  question.ts      |       0 |        0 |       0 |       0 |                   
--------------------|---------|----------|---------|---------|-------------------
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |    98.8 |    96.47 |     100 |   99.15 |                   
+ src                  |   98.93 |    96.96 |     100 |   99.43 |                   
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+  arrays.ts           |     100 |      100 |     100 |     100 |                   
+  functions.ts        |     100 |      100 |     100 |     100 |                   
+  nested.ts           |   97.43 |       92 |     100 |    98.7 | 298               
+  objects.ts          |     100 |      100 |     100 |     100 |                   
+ src/bad-components   |   96.66 |       50 |     100 |   96.42 |                   
+  ChooseTeam.tsx      |     100 |       50 |     100 |     100 | 19                
+  ColoredBox.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalf.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalfState.tsx |       0 |      100 |     100 |       0 | 3                 
+  ShoveBox.tsx        |     100 |      100 |     100 |     100 |                   
+ src/components       |     100 |      100 |     100 |     100 |                   
+  ChangeType.tsx      |     100 |      100 |     100 |     100 |                   
+  Counter.tsx         |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx    |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx    |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx    |     100 |      100 |     100 |     100 |                   
+  TwoDice.tsx         |     100 |      100 |     100 |     100 |                   
+ src/interfaces       |       0 |        0 |       0 |       0 |                   
+  answer.ts           |       0 |        0 |       0 |       0 |                   
+  question.ts         |       0 |        0 |       0 |       0 |                   
+----------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 13 passed, 13 total
-Tests:       101 passed, 101 total
+Test Suites: 17 passed, 17 total
+Tests:       118 passed, 118 total
 Snapshots:   0 total
-Time:        5.567 s
+Time:        6.656 s
 Ran all test suites.
