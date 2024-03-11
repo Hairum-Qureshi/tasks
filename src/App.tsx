@@ -22,30 +22,21 @@ function App(): JSX.Element {
             <header className="App-header" style={{ backgroundColor: "black" }}>
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <hr></hr>
-            <Counter />
-            <CheckAnswer expectedAnswer="42"></CheckAnswer>
-            <hr></hr>
-            <GiveAttempts></GiveAttempts>
-            <hr></hr>
-            <EditMode></EditMode>
-            <hr></hr>
-            <ChangeColor></ChangeColor>
-            <hr></hr>
+            <hr />
+            <CheckAnswer expectedAnswer="42" />
+            <hr />
+            <GiveAttempts />
+            <hr />
+            <EditMode />
+            <hr />
+            <ChangeColor />
+            <hr />
             <MultipleChoiceQuestion
                 options={["a", "b", "c"]}
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
-            <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
-            <hr></hr>
-            <ChooseTeam></ChooseTeam>
-            <hr></hr>
-            <ColoredBox></ColoredBox>
-            <hr></hr>
-            <ShoveBox></ShoveBox>
-            <hr></hr>
-            <Counter></Counter>
+            <hr />
+            <Counter />
             <hr />
             <RevealAnswer />
             <hr />
